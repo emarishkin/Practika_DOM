@@ -227,94 +227,140 @@
 // Найди гипотенузу по формуле a = sqrt(b^2 + c^2) и запиши результат в переменную hypotenuse. Для того чтобы найти квадратный корень числа, используй Math.sqrt(). Результат округляй с помощью Math.round().
 // Найди периметр треугольника, сложив длины катетов и гипотенузы. Результат запиши в переменную perimeter.
 
-let firstLeg = 300;
-let secondLeg = 700;
+// let firstLeg = 300;
+// let secondLeg = 700;
 
-let hypotenuse =Math.round(Math.sqrt(firstLeg*firstLeg + secondLeg*secondLeg))
-let perimeter=hypotenuse+firstLeg+secondLeg
-
-
-// Мяу! Мне нужна программа, которая вычислит мою ЧСС для тренировок. Формула такая: ЧСС во время тренировки = (максимальная ЧСС - ЧСС в покое) * интенсивность + ЧСС в покое.
-// Максимальная ЧСС рассчитывается так: 220 – возраст. Возраст записан в переменную age.
-// ЧСС в покое хранится в переменной pulseAtRest, а интенсивность записана в процентах и хранится в переменной intensity.
-// Найди ЧСС для тренировки и запиши результат в переменную pulseAtWorkout. Результат округляй с помощью Math.round(). И не забудь перевести проценты интенсивности в дробное число.
+// let hypotenuse =Math.round(Math.sqrt(firstLeg*firstLeg + secondLeg*secondLeg))
+// let perimeter=hypotenuse+firstLeg+secondLeg
 
 
-let age = 5;
-let pulseAtRest = 90;
-let intensity = 75;
-
-let cssMax=220-age
-let pulseAtWorkout = Math.round((cssMax-pulseAtRest)*(intensity/100)+pulseAtRest)
+// // Мяу! Мне нужна программа, которая вычислит мою ЧСС для тренировок. Формула такая: ЧСС во время тренировки = (максимальная ЧСС - ЧСС в покое) * интенсивность + ЧСС в покое.
+// // Максимальная ЧСС рассчитывается так: 220 – возраст. Возраст записан в переменную age.
+// // ЧСС в покое хранится в переменной pulseAtRest, а интенсивность записана в процентах и хранится в переменной intensity.
+// // Найди ЧСС для тренировки и запиши результат в переменную pulseAtWorkout. Результат округляй с помощью Math.round(). И не забудь перевести проценты интенсивности в дробное число.
 
 
-// Мяу! Напиши программу, которая будет рассчитывать сумму покупки с учётом скидки.
-// Стоимость записана в переменную price.
-// Если стоимость покупки от 1000 (включительно) до 3000 (не включая это значение), скидка составляет 5%.
-// Если стоимость покупки от 3000 (включительно) до 5000 (не включая это значение), скидка 10%.
-// Если стоимость покупки от 5000 (включительно) и выше, скидка 15%.
-// В остальных случаях скидки для покупателей нет.
-// Вычисляй стоимость с учётом скидки и записывай результат в переменную
-// discountedPrice
+// let age = 5;
+// let pulseAtRest = 90;
+// let intensity = 75;
+
+// let cssMax=220-age
+// let pulseAtWorkout = Math.round((cssMax-pulseAtRest)*(intensity/100)+pulseAtRest)
 
 
-let price = 4000;
-let discountedPrice;
-
-if(price>=1000 && price<3000){
-  discountedPrice=price-price*5/100
-} else if(price>=3000 && price<5000){
-  discountedPrice=price-price*10/100
-} else if(price>=5000){
-  discountedPrice=price-price*15/100
-} else discountedPrice=price
-
-// Напиши программу, которая определяет сколько цифр в одном числе.
-// Само число записано в переменную number.
-// Найди количество цифр в этом числе и запиши результат в переменную quantity
+// // Мяу! Напиши программу, которая будет рассчитывать сумму покупки с учётом скидки.
+// // Стоимость записана в переменную price.
+// // Если стоимость покупки от 1000 (включительно) до 3000 (не включая это значение), скидка составляет 5%.
+// // Если стоимость покупки от 3000 (включительно) до 5000 (не включая это значение), скидка 10%.
+// // Если стоимость покупки от 5000 (включительно) и выше, скидка 15%.
+// // В остальных случаях скидки для покупателей нет.
+// // Вычисляй стоимость с учётом скидки и записывай результат в переменную
+// // discountedPrice
 
 
-var number = 120;
-var quantity = 0;
-while (number >= 1) {
-  number /=10;
-  quantity++;
-}
-quantity=String(number).length
+// let price = 4000;
+// let discountedPrice;
+
+// if(price>=1000 && price<3000){
+//   discountedPrice=price-price*5/100
+// } else if(price>=3000 && price<5000){
+//   discountedPrice=price-price*10/100
+// } else if(price>=5000){
+//   discountedPrice=price-price*15/100
+// } else discountedPrice=price
+
+// // Напиши программу, которая определяет сколько цифр в одном числе.
+// // Само число записано в переменную number.
+// // Найди количество цифр в этом числе и запиши результат в переменную quantity
 
 
-// Напишите программу, которая будет находить последний индекс элемента в массиве.
-// Массив записан в переменную numbers.
-// Элемент, последний индекс которого надо найти, записан в переменную number.
-// Создайте переменную lastIndex и записывайте в неё последний индекс числа number. Если числа number в массиве нет, переменная lastIndex должна быть равна -1
+// var number = 120;
+// var quantity = 0;
+// while (number >= 1) {
+//   number /=10;
+//   quantity++;
+// }
+// quantity=String(number).length
 
 
-let numbers = [2, 4, 7, 4, 7, 2];
-let number = 4;
-let lastIndex=-1
+// // Напишите программу, которая будет находить последний индекс элемента в массиве.
+// // Массив записан в переменную numbers.
+// // Элемент, последний индекс которого надо найти, записан в переменную number.
+// // Создайте переменную lastIndex и записывайте в неё последний индекс числа number. Если числа number в массиве нет, переменная lastIndex должна быть равна -1
 
 
-for(let i=0;i<=numbers.length;i++){
- if(numbers[i]===number){
-   lastIndex=i
- }
-}
-
-// Напиши программу, которая на основе одного массива c багажом создаст другой.
-// Изначальный массив с багажом записан в переменную luggage.
-// Индекс элемента, с которого нужно начинать добавлять багаж (включая этот элемент), записан в переменную startIndex.
-// Количество элементов, которые нужно взять с собой записано в переменную quantity.
-// Собери новый массив на основе изначального, добавляя элементы последовательно (от меньшего индекса к большему). Выбирай определённое количество элементов из массива luggage, начиная с элемента с индексом startIndex, и добавляй их в новый массив. Он должен быть записан в переменную chosenLuggage.
-// Для добавления элементов в новый массив можешь использовать команду array.push().
+// let numbers = [2, 4, 7, 4, 7, 2];
+// let number = 4;
+// let lastIndex=-1
 
 
-let luggage = ['пакет', 'мяч', 'тапки', 'когтеточка', 'коробка', 'миска', 'мята'];
-let startIndex = 2;
-let quantity = 3;
-let chosenLuggage = [];
+// for(let i=0;i<=numbers.length;i++){
+//  if(numbers[i]===number){
+//    lastIndex=i
+//  }
+// }
 
-for(let i=startIndex;i<=luggage.length;i++){
-  if(chosenLuggage.length<quantity){
-  chosenLuggage.push(luggage[i])
+// // Напиши программу, которая на основе одного массива c багажом создаст другой.
+// // Изначальный массив с багажом записан в переменную luggage.
+// // Индекс элемента, с которого нужно начинать добавлять багаж (включая этот элемент), записан в переменную startIndex.
+// // Количество элементов, которые нужно взять с собой записано в переменную quantity.
+// // Собери новый массив на основе изначального, добавляя элементы последовательно (от меньшего индекса к большему). Выбирай определённое количество элементов из массива luggage, начиная с элемента с индексом startIndex, и добавляй их в новый массив. Он должен быть записан в переменную chosenLuggage.
+// // Для добавления элементов в новый массив можешь использовать команду array.push().
+
+
+// let luggage = ['пакет', 'мяч', 'тапки', 'когтеточка', 'коробка', 'миска', 'мята'];
+// let startIndex = 2;
+// let quantity = 3;
+// let chosenLuggage = [];
+
+// for(let i=startIndex;i<=luggage.length;i++){
+//   if(chosenLuggage.length<quantity){
+//   chosenLuggage.push(luggage[i])
+//   }
+// }
+
+
+
+var assortmentData = [
+    {
+      inStock: true,
+      isHit: false
+    },
+    {
+      inStock: false,
+      isHit: false
+    },
+    {
+      inStock: true,
+      isHit: true
+    },
+    {
+      inStock: true,
+      isHit: false
+    },
+    {
+      inStock: false,
+      isHit: false
+    }
+  ];
+  
+  function updateCards(cards){
+   
+   let elements = document.querySelectorAll('.good')
+   for(let i=0;i<cards.length;i++){
+     let element=elements[i]
+     let card=cards[i]
+     
+     let availableClass = 'good--unavailable'
+    if(card.inStock){
+      availableClass = 'good--available'
+    }
+    element.classList.add(availableClass)
+    
+    
+    if(card.isHit){
+      element.classList.add('good--hit')
+    }
+   }
   }
-}
+  updateCards(assortmentData)

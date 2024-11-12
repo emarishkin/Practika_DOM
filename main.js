@@ -1,11 +1,135 @@
+// let table = document.body.children[2]
 
 
-let table = document.body.children[2]
+//     table.rows[0].cells[0].style.background  = 'red'
+//     table.rows[1].cells[1].style.background  = 'red'
+//     table.rows[2].cells[2].style.background  = 'red'
+//     table.rows[3].cells[3].style.background  = 'red'
+//     table.rows[4].cells[4].style.background  = 'red'
 
 
-    table.rows[0].cells[0].style.background  = 'red'
-    table.rows[1].cells[1].style.background  = 'red'
-    table.rows[2].cells[2].style.background  = 'red'
-    table.rows[3].cells[3].style.background  = 'red'
-    table.rows[4].cells[4].style.background  = 'red'
+// Напиши программу, которая посчитает сколько всего рублей понадобится на поездку.
+// Курсы валют указаны в переменных euroRate и dollarRate.
+// Переменные euroAmount и dollarAmount— необходимые суммы на поездку.
+// Создай переменную rublesAmount и записывай в неё результат вычислений.
+
+let euroRate = 74;
+let dollarRate = 63;
+
+let euroAmount = 500;
+let dollarAmount = 2500;
+
+let euroRub=euroRate*euroAmount
+let UsdRub=dollarRate*dollarAmount
+
+let rublesAmount = euroRub+UsdRub
+
+// Напиши программу, которая посчитает, сколько в итоге денег я буду должен отдать после поездки.
+// Я могу занять необходимую сумму, но буду должен вернуть в два раза больше, чем взял.
+// В переменной travelCost сумма необходимая на поездку.
+// В переменной balance находится сумма, которая есть у меня сейчас.
+// Узнай, сколько я буду должен отдать своему другу, и запиши результат в переменную debtAmount.
+
+
+let travelCost = 150000;
+let balance = 100000;
+let debtAmount=(travelCost-balance)*2
+
+
+// Мяу! Посчитай сколько времени займёт мой перелёт.
+// В переменную flightDistance записано расстояние полёта в километрах.
+// В переменной averageSpeed находится средняя скорость самолёта (километры в час).
+// Найди время полёта (в часах) и запиши его в переменную flightTime.
+// Округляй результат вычислений с помощью команды Math.round.
+
+let flightDistance = 7260;
+let averageSpeed = 600;
+let flightTime = Math.round(flightDistance/averageSpeed)
+
+
+// Мяу! Напиши программу, которая будет определять возрастную группу по возрасту.
+// Возраст записан в переменную age.
+// Проверяй возраст и записывай возрастную группу в виде строки в переменную ageGroup.
+// Если возраст до года включительно, то возрастная группа называется 'Котята'.
+// Если возраст от года (не включая это значение) до трёх лет включительно — 'Молодые коты'.
+// Если возраст от трёх лет (не включая это значение) до семи (включительно) — 'Коты средних лет'.
+// А если возраст от семи лет (не включая это значение) и больше — 'Почтенные коты'.
+
+
+let age = 5;
+let ageGroup;
+
+if(age<=1){
+  ageGroup='Котята'
+} else if(age>=1 && age<=3){
+   ageGroup='Молодые коты'
+} else if(age>3 && age<=7){
+   ageGroup='Коты средних лет'
+} else if(age>7){
+   ageGroup='Почтенные коты'
+} 
+
+// Мяу! Запрограммируй умные весы, чтобы они давали рекомендации в зависимости от веса.
+// Вес записан в переменную weight.
+// Рекомендацию записывай строкой в переменную recommendation.
+// Если вес до 4 кг (не включая это значение), рекомендация – 'Пора перекусить'.
+// Если вс от 4 кг включительно до 5.5 кг включительно – 'Вес в норме'.
+// Если вес больше 5.5 кг – 'Пора на тренировку'.
+
+let weight = 5;
+let recommendation;
+
+weight<4?recommendation='Пора перекусить':''
+weight>5.5?recommendation='Пора на тренировку':''
+weight>=4 && weight<=5.5 ?recommendation='Вес в норме':''
+
+// Программа должна анализировать числа.
+// Если число делится на 3, результат работы программы — строка 'Fizz'.
+// Если число делится на 5 — строка 'Buzz'.
+// Если число одновременно делится на 3 и на 5 — результат 'FizzBuzz'.
+// В остальных случаях результат работы программы — изначальное число.
+// Число записано в переменную number.
+// Результат работы программы записывайте в переменную taskResult.
+
+let number = 15;
+let taskResult;
+
+if(number%3==0 && number%5==0){
+  taskResult='FizzBuzz'
+} else if(number%5==0){
+   taskResult='Buzz'
+} else if(number%3==0 ){
+   taskResult='Fizz'
+} else {
+  taskResult=number
+}
+
+// Напишите программу, которая последовательно выводит в консоль числа в геометрической прогрессии.
+// Стартовое значение, с которого должна начаться последовательность, записано в переменную startNumber.
+// Множитель записан в переменную multiplier.
+// Количество чисел записано в переменную quantity.
+
+
+let startNumber = 1;
+let multiplier = 4;
+let quantity = 7;
+
+while(quantity>0){
+  console.log(startNumber);
+  startNumber*=multiplier
+  quantity--
+}
+
+// Напишите универсальную программу, которая вычисляет сумму чисел от 1 до n.
+// Число, до которого нужно складывать числа (включительно), указано в переменной lastNumber.
+// Найдите сумму всех чисел и сохраните результат в переменную sum.
+
+
+let lastNumber = 10;
+let sum = 0;
+
+for(let i=sum;i<=lastNumber;i++){
+  sum+=i
+}
+
 
